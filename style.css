@@ -1,0 +1,59 @@
+body{
+    background-color: antiquewhite;
+    font-family: Norse,sans-serif,Arial, Helvetica;
+    text-align:center;
+}
+h1{
+    margin-top: 100px;
+}
+.container{
+    background-color: aliceblue;
+    width:500px;
+    height:300px;
+    border:3px solid black;
+    border-radius: 10px;
+    margin:0 auto;
+    margin-bottom: 50px;;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex:1;
+    justify-content: space-around;
+    align-items: center;
+}
+/*.player,
+.computer{
+    border-bottom: 2px solid black;
+}*/
+.btn{
+    display: flex;
+    flex:1;
+    gap:20px;
+    justify-content: center;
+}
+button{
+    border-radius: 5px;
+    background-color: azure;
+    height:30px;
+}
+#fRslt{
+    background-color: aliceblue;
+    width:200px;
+    height:100px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 5px;;
+    margin:0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+#gwinner{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color:brown;
+    letter-spacing: .51rem;
+}

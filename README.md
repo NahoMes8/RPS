@@ -1,2 +1,2 @@
 # RPS
-TOP PROJECT- rock paper and scissors game that returns results in the console.
+TOP PROJECT- updating the rock paper and scissors project with some basic ui

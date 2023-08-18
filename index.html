@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <title>rps</title>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
 <body>
-
-
+    <h1>MATCH UP</h1>
+    <div class="container">
+        <div class="player">
+          PLAYER: <span id="player">player</span>
+          <p class="playerScore">0</p>
+        </div>
+        <div class="computer">
+            COMPUTER: <span id="computer">computer</span>
+            <p class="computerScore">0</p>
+        </div>
+    </div>
+    <p id="gwinner"></p>
+    <p id="fRslt"><span id="text">TEXT</span></p>
+    <div class="btn">
+        <button id="rock">ROCK</button>
+        <button id="paper">PAPER</button>
+        <button id="scissors">SCISSORS</button>    
+    </div>
+    <button id="b">reset</button>
 </body>
 </html>
