@@ -12,8 +12,8 @@ let computerChoice;
 let result;
 let pScore=0;
 let cScore=0;
-let i=1;
-        
+let count=0;
+let winner
             
             btns.forEach((btn) =>{
                 btn.addEventListener('click', e =>{
@@ -21,10 +21,24 @@ let i=1;
                     ptext.innerText=userChoice;
                     random();
                     playRound();
-                    
-                    game();
+                    count++;
+                    if(count%5==0){
+                        if(pScore>cScore){
+                            winner="YOU WIN";
+                            pScore=0;
+                            cScore=0
+                        }else if(cScore>pScore){
+                            winner="COMPUTER WINS";
+                            pScore=0;
+                            cScore=0;
+                        }
+                        gwinner.innerText=winner;
+                    }else{
+                        winner=" ";
+                    }
+                    gwinner.innerText=winner;
                 });
-           
+          
             });
             
            
@@ -68,15 +82,3 @@ function playRound(){
 }
 
 
-
-function game(){
-    if(pScore==5){
-        gwinner.innerText="player wins";
-        playerScore.innerText=0;
-        computerScore.innerText=0;
-    }else if(cScore==5){
-        gwinner.innerText="computer wins";
-        playerScore.innerText=0;
-        computerScore.innerText=0;
-    }
-}
